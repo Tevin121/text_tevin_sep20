@@ -25,13 +25,13 @@ void setup() {
   //
   // DIVs or rect()
   // Layout our text space and typographical features
-  rect( xTitle, yTitle, widthTitle, heightTitle );
-  rect( xFooter, yFooter, widthFooter, heightFooter );
+  //rect( xTitle, yTitle, widthTitle, heightTitle );
+  //rect( xFooter, yFooter, widthFooter, heightFooter );
   //
   // Text Setup
   // Fonts from OS (Operating System)
-  String[] fontList = PFont.list(); //Lists all fonts available on OS
-  printArray(fontList);
+  //String[] fontList = PFont.list(); //Lists all fonts available on OS
+  //printArray(fontList);
   titleFont = createFont("Harrington", 55);
   footerFont = createFont("Harrington", 55); //Verify the font exists in Processing.Java
   // Tools / Create Font / Find Font / Do not press "OK", known bug
@@ -53,6 +53,7 @@ void draw() {
   fill(yellow); //ink
   textAlign(CENTER, TOP); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  size = 120;
   textFont(footerFont, size);
   text ( footer, xFooter, yFooter, widthFooter, heightFooter );
   fill(resetDefaultInk); //ink
